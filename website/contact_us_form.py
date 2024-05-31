@@ -8,6 +8,11 @@ class Contact_reg_Auth_Routes:
     def __init__(self, app):
         self.app = app
         self.route()
+    #Let's suppose we're changing some code here in this directory
+    
+
+    def index(request):
+        return HttpsResponse("This is the Contact_us page")
 
     def route(self):
         @self.app.route('/contactus', methods=['POST', 'GET'])
